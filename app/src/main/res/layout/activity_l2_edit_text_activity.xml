@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".L2_EditTextActivity">
+
+    <TextView
+        android:id="@+id/hello_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Знакомство с элементом EditText"
+        android:textSize="24sp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#c74"
+        android:background="#15f"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter string"
+        android:layout_below="@id/hello_edittext"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView_invStr"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="24sp"
+        android:layout_below="@id/editTextTextPersonName"
+        android:text="________________" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_invStr"
+        android:onClick="clickInverseText"
+        android:text="Inverse" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickBackToMain"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/button2"
+        android:layout_marginBottom="20dp"
+        android:onClick="clickToNextL3"
+        android:text="Next lesson" />
+</RelativeLayout>
