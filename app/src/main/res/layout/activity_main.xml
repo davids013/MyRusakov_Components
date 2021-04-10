@@ -11,8 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1. Знакомство с элементом TextView"
+        android:text="1. Знакомство с текстовой меткой TextView"
         android:textSize="24sp"
+        android:gravity="center"
         android:layout_gravity="top"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"

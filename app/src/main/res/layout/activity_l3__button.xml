@@ -4,15 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
     tools:context=".L3_ButtonActivity">
 
     <Button
         android:id="@+id/buttonRecord"
         android:layout_width="200dp"
-        android:layout_height="75dp"
+        android:layout_height="100dp"
         android:text="Start"
         android:onClick="clickRecord"
         android:layout_centerInParent="true"
-        android:textSize="24sp" />
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/buttonBackToL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="clickNextL4" />
+
+    <Button
+        android:id="@+id/buttonNextToL4"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/buttonBackToL2"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:text="To Lesson 4" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:layout_margin="20dp"
+        android:text="Switch" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipBackgroundColor="#900"
+        android:layout_margin="10dp"
+        android:text="It's a chip"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hello_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Знакомство с кнопкой Button"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/switch1"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#c74"
+        android:background="#15f"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
 
 </RelativeLayout>
