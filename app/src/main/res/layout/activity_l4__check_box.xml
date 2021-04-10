@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
+    android:id="@+id/layout"
     tools:context=".L4_CheckBoxActivity">
 
     <TextView
@@ -73,13 +74,15 @@
 
     <TextView
         android:id="@+id/textView_result"
-        android:layout_below="@id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox3"
         android:layout_centerHorizontal="true"
         android:layout_margin="30dp"
-        android:textSize="24sp"
-        android:text="" />
+        android:text=""
+        android:textColor="@color/green"
+        android:textStyle="italic"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/buttonBackToL3"
