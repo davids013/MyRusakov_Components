@@ -48,4 +48,9 @@ public class L3_ButtonActivity extends AppCompatActivity {
         Intent intentBackToL2 = new Intent(this, L2_EditTextActivity.class);
         startActivity(intentBackToL2);
     }
+
+    public void clickNextToL4(View view) {
+        Intent intentNextToL4 = new Intent(this, L4_CheckBoxActivity.class);
+        startActivity(intentNextToL4);
+    }
 }

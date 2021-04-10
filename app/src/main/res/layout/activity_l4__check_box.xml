@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".L4_CheckBoxActivity">
+
+    <TextView
+        android:id="@+id/hello_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Знакомство с элементом CheckBox"
+        android:padding="8dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#c74"
+        android:background="#15f"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:text="Список дел"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+         android:textColor="@color/red"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:layout_below="@id/textView_list"
+        android:textSize="20sp"
+        android:text="Сходить в магазин" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_below="@id/checkBox1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:gravity="left|center_vertical"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Пообедать" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_below="@id/checkBox2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:gravity="left|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="Дочитать книгу" />
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_below="@id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textSize="24sp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonBackToL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:text="Back to Lesson 3" />
+
+    <Button
+        android:id="@+id/buttonNextToL5"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:textSize="18sp"
+        android:layout_above="@id/buttonBackToL3"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="To Lesson 5" />
+
+</RelativeLayout>
