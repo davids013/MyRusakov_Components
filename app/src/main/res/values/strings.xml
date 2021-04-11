@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">5_Компоненты Android Studio</string>
+    <string-array name="array_for_spinner1">
+        <item>Красный</item>
+        <item>Жёлтый</item>
+        <item>Синий</item>
+    </string-array>
 </resources>

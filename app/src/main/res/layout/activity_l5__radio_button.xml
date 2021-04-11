@@ -131,6 +131,7 @@
             android:layout_below="@id/button_order"
             android:layout_alignParentRight="true"
             android:layout_marginTop="15dp"
+            android:onClick="clickNextL6"
             android:layout_marginBottom="10dp"
             android:text="To Lesson 6" />
 

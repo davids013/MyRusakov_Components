@@ -46,4 +46,9 @@ public class L5_RadioButtonActivity extends AppCompatActivity {
         Intent intentBackToL4 = new Intent(this, L4_CheckBoxActivity.class);
         startActivity(intentBackToL4);
     }
+
+    public void clickNextL6(View view) {
+        Intent intentNextL6 = new Intent(this, L6_SpinnerActivity.class);
+        startActivity(intentNextL6);
+    }
 }
