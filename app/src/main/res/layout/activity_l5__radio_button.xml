@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".L5_RadioButtonActivity">
+
+        <TextView
+            android:id="@+id/hello_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Знакомство с кнопками RadioButton"
+            android:padding="8dp"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:layout_alignParentTop="true"
+            android:layout_margin="0dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#c74"
+            android:background="#15f"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/hello_radioButton"
+            android:layout_margin="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/green"
+            android:text="Ваш заказ" />
+
+        <TextView
+            android:id="@+id/textView_bread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_order"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic"
+            android:text="Хлеб" />
+
+        <RadioGroup
+            android:id="@+id/rg_bread"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textView_bread"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Белый" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Чёрный" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_bread"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Напиток" />
+
+        <RadioGroup
+            android:id="@+id/rg_drink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_drink">
+
+            <RadioButton
+                android:id="@+id/radioButton2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Чай"
+                android:checked="true"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сок"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Минеральная вода"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@+id/rg_drink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="clickOrder"
+            android:text="Отправить заказ"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonNextToL6"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_below="@id/button_order"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="To Lesson 6" />
+
+        <Button
+            android:id="@+id/buttonBackToL4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonNextToL6"
+            android:layout_alignParentRight="true"
+            android:onClick="clickBackToL4"
+            android:layout_marginBottom="15dp"
+            android:text="Back To Lesson 4" />
+
+    </RelativeLayout>
+</ScrollView>

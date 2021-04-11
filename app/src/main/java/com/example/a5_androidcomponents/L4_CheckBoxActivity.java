@@ -2,6 +2,7 @@ package com.example.a5_androidcomponents;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -43,5 +44,10 @@ public class L4_CheckBoxActivity extends AppCompatActivity implements CompoundBu
         System.out.println(result);
         TextView tvres = findViewById(R.id.textView_result);
         tvres.setText(result);
+    }
+
+    public void clickNextL5(View view) {
+        Intent intentToL5 = new Intent(this, L5_RadioButtonActivity.class);
+        startActivity(intentToL5);
     }
 }

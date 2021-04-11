@@ -80,9 +80,9 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="30dp"
         android:text=""
-        android:textColor="@color/green"
-        android:textStyle="italic"
-        android:textSize="18sp" />
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="italic" />
 
     <Button
         android:id="@+id/buttonBackToL3"
@@ -98,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:textSize="18sp"
+        android:onClick="clickNextL5"
         android:layout_above="@id/buttonBackToL3"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="10dp"
