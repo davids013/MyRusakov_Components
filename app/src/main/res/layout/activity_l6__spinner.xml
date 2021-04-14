@@ -39,7 +39,7 @@
         android:id="@+id/buttonBackToL5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to L6"
+        android:text="Back to L5"
         android:onClick="clickBackToL5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -64,6 +64,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinner1"
-        android:layout_marginTop="75dp"/>
+        android:layout_marginTop="100dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
